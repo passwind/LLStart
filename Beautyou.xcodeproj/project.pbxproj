@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4DA770419EEA62E00ED4FDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA770319EEA62E00ED4FDD /* main.m */; };
+		E4DA770719EEA62E00ED4FDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA770619EEA62E00ED4FDD /* AppDelegate.m */; };
+		E4DA770A19EEA62E00ED4FDD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA770919EEA62E00ED4FDD /* MasterViewController.m */; };
+		E4DA770D19EEA62E00ED4FDD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA770C19EEA62E00ED4FDD /* DetailViewController.m */; };
+		E4DA771019EEA62E00ED4FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DA770E19EEA62E00ED4FDD /* Main.storyboard */; };
+		E4DA771219EEA62E00ED4FDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DA771119EEA62E00ED4FDD /* Images.xcassets */; };
+		E4DA771519EEA62E00ED4FDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4DA771319EEA62E00ED4FDD /* LaunchScreen.xib */; };
+		E4DA772119EEA62E00ED4FDD /* BeautyouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA772019EEA62E00ED4FDD /* BeautyouTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4DA771B19EEA62E00ED4FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4DA76F619EEA62E00ED4FDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4DA76FD19EEA62E00ED4FDD;
+			remoteInfo = Beautyou;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4DA76FE19EEA62E00ED4FDD /* Beautyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beautyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DA770219EEA62E00ED4FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4DA770319EEA62E00ED4FDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4DA770519EEA62E00ED4FDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4DA770619EEA62E00ED4FDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4DA770819EEA62E00ED4FDD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		E4DA770919EEA62E00ED4FDD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		E4DA770B19EEA62E00ED4FDD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E4DA770C19EEA62E00ED4FDD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E4DA770F19EEA62E00ED4FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4DA771119EEA62E00ED4FDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E4DA771419EEA62E00ED4FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E4DA771A19EEA62E00ED4FDD /* BeautyouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DA771F19EEA62E00ED4FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4DA772019EEA62E00ED4FDD /* BeautyouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautyouTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4DA76FB19EEA62E00ED4FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4DA771719EEA62E00ED4FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4DA76F519EEA62E00ED4FDD = {
+			isa = PBXGroup;
+			children = (
+				E4DA770019EEA62E00ED4FDD /* Beautyou */,
+				E4DA771D19EEA62E00ED4FDD /* BeautyouTests */,
+				E4DA76FF19EEA62E00ED4FDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4DA76FF19EEA62E00ED4FDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4DA76FE19EEA62E00ED4FDD /* Beautyou.app */,
+				E4DA771A19EEA62E00ED4FDD /* BeautyouTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4DA770019EEA62E00ED4FDD /* Beautyou */ = {
+			isa = PBXGroup;
+			children = (
+				E4DA770519EEA62E00ED4FDD /* AppDelegate.h */,
+				E4DA770619EEA62E00ED4FDD /* AppDelegate.m */,
+				E4DA770819EEA62E00ED4FDD /* MasterViewController.h */,
+				E4DA770919EEA62E00ED4FDD /* MasterViewController.m */,
+				E4DA770B19EEA62E00ED4FDD /* DetailViewController.h */,
+				E4DA770C19EEA62E00ED4FDD /* DetailViewController.m */,
+				E4DA770E19EEA62E00ED4FDD /* Main.storyboard */,
+				E4DA771119EEA62E00ED4FDD /* Images.xcassets */,
+				E4DA771319EEA62E00ED4FDD /* LaunchScreen.xib */,
+				E4DA770119EEA62E00ED4FDD /* Supporting Files */,
+			);
+			path = Beautyou;
+			sourceTree = "<group>";
+		};
+		E4DA770119EEA62E00ED4FDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4DA770219EEA62E00ED4FDD /* Info.plist */,
+				E4DA770319EEA62E00ED4FDD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4DA771D19EEA62E00ED4FDD /* BeautyouTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4DA772019EEA62E00ED4FDD /* BeautyouTests.m */,
+				E4DA771E19EEA62E00ED4FDD /* Supporting Files */,
+			);
+			path = BeautyouTests;
+			sourceTree = "<group>";
+		};
+		E4DA771E19EEA62E00ED4FDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4DA771F19EEA62E00ED4FDD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4DA76FD19EEA62E00ED4FDD /* Beautyou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4DA772419EEA62E00ED4FDD /* Build configuration list for PBXNativeTarget "Beautyou" */;
+			buildPhases = (
+				E4DA76FA19EEA62E00ED4FDD /* Sources */,
+				E4DA76FB19EEA62E00ED4FDD /* Frameworks */,
+				E4DA76FC19EEA62E00ED4FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Beautyou;
+			productName = Beautyou;
+			productReference = E4DA76FE19EEA62E00ED4FDD /* Beautyou.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4DA771919EEA62E00ED4FDD /* BeautyouTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4DA772719EEA62E00ED4FDD /* Build configuration list for PBXNativeTarget "BeautyouTests" */;
+			buildPhases = (
+				E4DA771619EEA62E00ED4FDD /* Sources */,
+				E4DA771719EEA62E00ED4FDD /* Frameworks */,
+				E4DA771819EEA62E00ED4FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4DA771C19EEA62E00ED4FDD /* PBXTargetDependency */,
+			);
+			name = BeautyouTests;
+			productName = BeautyouTests;
+			productReference = E4DA771A19EEA62E00ED4FDD /* BeautyouTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4DA76F619EEA62E00ED4FDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Zhu Yu";
+				TargetAttributes = {
+					E4DA76FD19EEA62E00ED4FDD = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					E4DA771919EEA62E00ED4FDD = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = E4DA76FD19EEA62E00ED4FDD;
+					};
+				};
+			};
+			buildConfigurationList = E4DA76F919EEA62E00ED4FDD /* Build configuration list for PBXProject "Beautyou" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4DA76F519EEA62E00ED4FDD;
+			productRefGroup = E4DA76FF19EEA62E00ED4FDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4DA76FD19EEA62E00ED4FDD /* Beautyou */,
+				E4DA771919EEA62E00ED4FDD /* BeautyouTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4DA76FC19EEA62E00ED4FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DA771019EEA62E00ED4FDD /* Main.storyboard in Resources */,
+				E4DA771519EEA62E00ED4FDD /* LaunchScreen.xib in Resources */,
+				E4DA771219EEA62E00ED4FDD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4DA771819EEA62E00ED4FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4DA76FA19EEA62E00ED4FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DA770719EEA62E00ED4FDD /* AppDelegate.m in Sources */,
+				E4DA770A19EEA62E00ED4FDD /* MasterViewController.m in Sources */,
+				E4DA770419EEA62E00ED4FDD /* main.m in Sources */,
+				E4DA770D19EEA62E00ED4FDD /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4DA771619EEA62E00ED4FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DA772119EEA62E00ED4FDD /* BeautyouTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4DA771C19EEA62E00ED4FDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4DA76FD19EEA62E00ED4FDD /* Beautyou */;
+			targetProxy = E4DA771B19EEA62E00ED4FDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4DA770E19EEA62E00ED4FDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4DA770F19EEA62E00ED4FDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4DA771319EEA62E00ED4FDD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4DA771419EEA62E00ED4FDD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4DA772219EEA62E00ED4FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E4DA772319EEA62E00ED4FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4DA772519EEA62E00ED4FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Beautyou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E4DA772619EEA62E00ED4FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Beautyou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E4DA772819EEA62E00ED4FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BeautyouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beautyou.app/Beautyou";
+			};
+			name = Debug;
+		};
+		E4DA772919EEA62E00ED4FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BeautyouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beautyou.app/Beautyou";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4DA76F919EEA62E00ED4FDD /* Build configuration list for PBXProject "Beautyou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DA772219EEA62E00ED4FDD /* Debug */,
+				E4DA772319EEA62E00ED4FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4DA772419EEA62E00ED4FDD /* Build configuration list for PBXNativeTarget "Beautyou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DA772519EEA62E00ED4FDD /* Debug */,
+				E4DA772619EEA62E00ED4FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4DA772719EEA62E00ED4FDD /* Build configuration list for PBXNativeTarget "BeautyouTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DA772819EEA62E00ED4FDD /* Debug */,
+				E4DA772919EEA62E00ED4FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4DA76F619EEA62E00ED4FDD /* Project object */;
+}
