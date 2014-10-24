@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		E4DA770419EEA62E00ED4FDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA770319EEA62E00ED4FDD /* main.m */; };
 		E4DA770719EEA62E00ED4FDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA770619EEA62E00ED4FDD /* AppDelegate.m */; };
-		E4DA770A19EEA62E00ED4FDD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA770919EEA62E00ED4FDD /* MasterViewController.m */; };
-		E4DA770D19EEA62E00ED4FDD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA770C19EEA62E00ED4FDD /* DetailViewController.m */; };
 		E4DA771019EEA62E00ED4FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DA770E19EEA62E00ED4FDD /* Main.storyboard */; };
 		E4DA771219EEA62E00ED4FDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DA771119EEA62E00ED4FDD /* Images.xcassets */; };
 		E4DA771519EEA62E00ED4FDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4DA771319EEA62E00ED4FDD /* LaunchScreen.xib */; };
 		E4DA772119EEA62E00ED4FDD /* BeautyouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA772019EEA62E00ED4FDD /* BeautyouTests.m */; };
+		E4F6116019FA978600DA3144 /* DataInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F6115F19FA978600DA3144 /* DataInputViewController.m */; };
+		E4F6116319FA98A400DA3144 /* SexInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F6116219FA98A400DA3144 /* SexInputViewController.m */; };
+		E4F6116619FA98D500DA3144 /* GuageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F6116519FA98D500DA3144 /* GuageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +34,18 @@
 		E4DA770319EEA62E00ED4FDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4DA770519EEA62E00ED4FDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4DA770619EEA62E00ED4FDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4DA770819EEA62E00ED4FDD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		E4DA770919EEA62E00ED4FDD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		E4DA770B19EEA62E00ED4FDD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		E4DA770C19EEA62E00ED4FDD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E4DA770F19EEA62E00ED4FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4DA771119EEA62E00ED4FDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E4DA771419EEA62E00ED4FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E4DA771A19EEA62E00ED4FDD /* BeautyouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DA771F19EEA62E00ED4FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4DA772019EEA62E00ED4FDD /* BeautyouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautyouTests.m; sourceTree = "<group>"; };
+		E4F6115E19FA978600DA3144 /* DataInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataInputViewController.h; sourceTree = "<group>"; };
+		E4F6115F19FA978600DA3144 /* DataInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataInputViewController.m; sourceTree = "<group>"; };
+		E4F6116119FA98A400DA3144 /* SexInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SexInputViewController.h; sourceTree = "<group>"; };
+		E4F6116219FA98A400DA3144 /* SexInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SexInputViewController.m; sourceTree = "<group>"; };
+		E4F6116419FA98D500DA3144 /* GuageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuageViewController.h; sourceTree = "<group>"; };
+		E4F6116519FA98D500DA3144 /* GuageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +89,16 @@
 			children = (
 				E4DA770519EEA62E00ED4FDD /* AppDelegate.h */,
 				E4DA770619EEA62E00ED4FDD /* AppDelegate.m */,
-				E4DA770819EEA62E00ED4FDD /* MasterViewController.h */,
-				E4DA770919EEA62E00ED4FDD /* MasterViewController.m */,
-				E4DA770B19EEA62E00ED4FDD /* DetailViewController.h */,
-				E4DA770C19EEA62E00ED4FDD /* DetailViewController.m */,
 				E4DA770E19EEA62E00ED4FDD /* Main.storyboard */,
 				E4DA771119EEA62E00ED4FDD /* Images.xcassets */,
 				E4DA771319EEA62E00ED4FDD /* LaunchScreen.xib */,
 				E4DA770119EEA62E00ED4FDD /* Supporting Files */,
+				E4F6115E19FA978600DA3144 /* DataInputViewController.h */,
+				E4F6115F19FA978600DA3144 /* DataInputViewController.m */,
+				E4F6116119FA98A400DA3144 /* SexInputViewController.h */,
+				E4F6116219FA98A400DA3144 /* SexInputViewController.m */,
+				E4F6116419FA98D500DA3144 /* GuageViewController.h */,
+				E4F6116519FA98D500DA3144 /* GuageViewController.m */,
 			);
 			path = Beautyou;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				TargetAttributes = {
 					E4DA76FD19EEA62E00ED4FDD = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 6J6M8JHPKJ;
 					};
 					E4DA771919EEA62E00ED4FDD = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -225,9 +231,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DA770719EEA62E00ED4FDD /* AppDelegate.m in Sources */,
-				E4DA770A19EEA62E00ED4FDD /* MasterViewController.m in Sources */,
 				E4DA770419EEA62E00ED4FDD /* main.m in Sources */,
-				E4DA770D19EEA62E00ED4FDD /* DetailViewController.m in Sources */,
+				E4F6116319FA98A400DA3144 /* SexInputViewController.m in Sources */,
+				E4F6116619FA98D500DA3144 /* GuageViewController.m in Sources */,
+				E4F6116019FA978600DA3144 /* DataInputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +356,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Beautyou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +369,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Beautyou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +431,7 @@
 				E4DA772619EEA62E00ED4FDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4DA772719EEA62E00ED4FDD /* Build configuration list for PBXNativeTarget "BeautyouTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +440,7 @@
 				E4DA772919EEA62E00ED4FDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
