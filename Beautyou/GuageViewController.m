@@ -14,6 +14,7 @@
 @interface GuageViewController ()<GuageScrollViewDataSource>
 @property (weak, nonatomic) IBOutlet UILabel *guageTitleLabel;
 @property (weak, nonatomic) IBOutlet GuageScrollView *guageView;
+@property (weak, nonatomic) IBOutlet UILabel *unitLabel;
 
 @end
 
@@ -29,6 +30,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self reloadGuageData];
 }
 
 /*
@@ -47,7 +54,7 @@
 {
     _guageInfo=dic;
     
-    self.guageTitleLabel.text=_guageInfo[@"unit"];
+    self.unitLabel.text=_guageInfo[@"unit"];
     [self reloadGuageData];
 }
 
@@ -63,7 +70,7 @@
     
     [_guageView setContentSize:newSize];
     
-    [self moveMidPosition];
+    [self moveToGuage:[_guageInfo[@"default"] floatValue]];
 }
 
 -(void)moveMidPosition
@@ -74,12 +81,25 @@
     CGPoint offset=CGPointMake(totalSize.width/2-frame.size.width/2, 0);
     
     _guageView.contentOffset=offset;
+    
+    int data=[_guageInfo[@"min"] intValue]+([_guageInfo[@"max"] intValue]-[_guageInfo[@"min"] intValue])*(offset.x+frame.size.width/2)/totalSize.width;
+    _guageTitleLabel.text=[NSString stringWithFormat:@"%d",data];
+}
+
+-(void)moveToGuage:(CGFloat)data
+{
+    CGSize totalSize=_guageView.contentSize;
+    CGRect frame=_guageView.frame;
+    CGFloat x=(data-[_guageInfo[@"min"] intValue])/([_guageInfo[@"max"] intValue]-[_guageInfo[@"min"] intValue])*totalSize.width-frame.size.width/2;
+    CGPoint offset=_guageView.contentOffset;
+    offset.x=x;
+    _guageView.contentOffset=offset;
 }
 
 #pragma mark - GuageScrollViewDataSource Method
--(UIView*)guageScrollView:(GuageScrollView *)scrollView withCol:(int)column
+-(UIView*)guageView:(GuageScrollView *)scrollView withCol:(int)column
 {
-    UIImageView * tile=(UIImageView *)[scrollView dequeueReusableTile];
+    UIImageView * tile=(UIImageView *)[scrollView dequeueReusableTile:GuageTileType_Guage];
     
     if(!tile)
     {
@@ -87,6 +107,27 @@
     }
     
     return tile;
+}
+
+-(UIView*)noteView:(GuageScrollView *)scrollView withCol:(int)column
+{
+    UILabel * tile=(UILabel*)[scrollView dequeueReusableTile:GuageTileType_Note];
+    if (!tile) {
+        tile=[[UILabel alloc] initWithFrame:CGRectZero];
+        tile.font=[UIFont fontWithName:@"System" size:12.0f];
+    }
+    tile.text=[NSString stringWithFormat:@"%d",[_guageInfo[@"min"] intValue]+[_guageInfo[@"step"] intValue]*column];
+    return tile;
+}
+
+#pragma mark - UIScrollViewDelegate Functions
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGRect frame=scrollView.frame;
+    CGPoint offset=scrollView.contentOffset;
+    
+    int data=[_guageInfo[@"min"] intValue]+([_guageInfo[@"max"] intValue]-[_guageInfo[@"min"] intValue])*(offset.x+frame.size.width/2)/scrollView.contentSize.width;
+    _guageTitleLabel.text=[NSString stringWithFormat:@"%d",data];
 }
 
 @end

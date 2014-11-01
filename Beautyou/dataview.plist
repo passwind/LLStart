@@ -16,13 +16,15 @@
 		<key>guageInfo</key>
 		<dict>
 			<key>min</key>
-			<integer>30</integer>
+			<integer>10</integer>
 			<key>max</key>
-			<integer>150</integer>
+			<integer>200</integer>
 			<key>step</key>
 			<integer>10</integer>
 			<key>unit</key>
 			<string>公斤</string>
+			<key>default</key>
+			<integer>50</integer>
 		</dict>
 	</dict>
 	<dict>
@@ -33,13 +35,15 @@
 		<key>guageInfo</key>
 		<dict>
 			<key>min</key>
-			<integer>100</integer>
+			<integer>80</integer>
 			<key>max</key>
 			<integer>250</integer>
 			<key>step</key>
 			<integer>10</integer>
 			<key>unit</key>
 			<string>CM</string>
+			<key>default</key>
+			<integer>165</integer>
 		</dict>
 	</dict>
 	<dict>
@@ -50,13 +54,15 @@
 		<key>guageInfo</key>
 		<dict>
 			<key>min</key>
-			<integer>15</integer>
+			<integer>10</integer>
 			<key>max</key>
-			<integer>75</integer>
+			<integer>90</integer>
 			<key>step</key>
 			<integer>10</integer>
 			<key>unit</key>
 			<string>岁</string>
+			<key>default</key>
+			<integer>25</integer>
 		</dict>
 	</dict>
 </array>

@@ -8,11 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    GuageTileType_Guage,
+    GuageTileType_Note
+}GuageTileType;
+
 @class GuageScrollView;
 
 @protocol GuageScrollViewDataSource <NSObject>
 
--(UIView*)guageScrollView:(GuageScrollView*)scrollView withCol:(int)column;
+-(UIView*)guageView:(GuageScrollView*)scrollView withCol:(int)column;
+
+-(UIView*)noteView:(GuageScrollView*)scrollView withCol:(int)column;
 
 @end
 
@@ -20,6 +27,6 @@
 
 @property (nonatomic,strong) id<GuageScrollViewDataSource> dataSource;
 
-- (UIView *)dequeueReusableTile;
+- (UIView *)dequeueReusableTile:(GuageTileType)type;
 
 @end

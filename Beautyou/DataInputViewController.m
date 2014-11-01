@@ -65,7 +65,8 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"ShowAnalyse"]) {
-        AnalyseViewController * analyseViewController=segue.destinationViewController;
+        UINavigationController * controller=segue.destinationViewController;
+        AnalyseViewController * analyseViewController=(AnalyseViewController*)[controller.viewControllers objectAtIndex:0];
         analyseViewController.delegate=self;
     }
 }
@@ -143,7 +144,7 @@
 #pragma mark - AnalyseViewControllerDelegate
 -(void)analyseViewController:(AnalyseViewController *)controller didExitWithFlag:(BOOL)reflag
 {
-    [self dismissViewControllerAnimated:YES completion:^{
+    [self dismissViewControllerAnimated:NO completion:^{
         if (reflag) {
             _currentDataIndex=0;
             [self displayData];

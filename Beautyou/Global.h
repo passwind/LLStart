@@ -12,6 +12,11 @@
 #define UnitWidth 107
 #define UnitHeight 63
 
+#define NoteWidth 30
+#define NoteHeight 20
+
 #define GuageUnitY 200+40
+
+#define kPadding 10
 
 #endif

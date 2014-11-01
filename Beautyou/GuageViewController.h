@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GuageViewController : UIViewController
+@interface GuageViewController : UIViewController<UIScrollViewDelegate>
 
 @property (nonatomic,strong) NSDictionary * guageInfo;
 @end

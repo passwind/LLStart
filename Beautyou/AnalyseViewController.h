@@ -16,7 +16,7 @@
 
 @end
 
-@interface AnalyseViewController : UIViewController
+@interface AnalyseViewController : UITableViewController
 
 @property (nonatomic,assign) id<AnalyseViewControllerDelegate> delegate;
 
