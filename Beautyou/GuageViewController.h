@@ -10,4 +10,5 @@
 
 @interface GuageViewController : UIViewController
 
+@property (nonatomic,strong) NSDictionary * guageInfo;
 @end

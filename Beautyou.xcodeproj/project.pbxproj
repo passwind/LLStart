@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E407036719FB3DAC00A353D3 /* AnalyseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E407036619FB3DAC00A353D3 /* AnalyseViewController.m */; };
+		E407036919FB3E2300A353D3 /* dataview.plist in Resources */ = {isa = PBXBuildFile; fileRef = E407036819FB3E2300A353D3 /* dataview.plist */; };
+		E407036E19FB92CE00A353D3 /* GuageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E407036D19FB92CE00A353D3 /* GuageScrollView.m */; };
 		E4DA770419EEA62E00ED4FDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA770319EEA62E00ED4FDD /* main.m */; };
 		E4DA770719EEA62E00ED4FDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DA770619EEA62E00ED4FDD /* AppDelegate.m */; };
 		E4DA771019EEA62E00ED4FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DA770E19EEA62E00ED4FDD /* Main.storyboard */; };
@@ -29,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E407036519FB3DAC00A353D3 /* AnalyseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyseViewController.h; sourceTree = "<group>"; };
+		E407036619FB3DAC00A353D3 /* AnalyseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyseViewController.m; sourceTree = "<group>"; };
+		E407036819FB3E2300A353D3 /* dataview.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dataview.plist; sourceTree = "<group>"; };
+		E407036C19FB92CE00A353D3 /* GuageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuageScrollView.h; sourceTree = "<group>"; };
+		E407036D19FB92CE00A353D3 /* GuageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuageScrollView.m; sourceTree = "<group>"; };
+		E4B059A71A04D563001F7FAE /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		E4DA76FE19EEA62E00ED4FDD /* Beautyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beautyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DA770219EEA62E00ED4FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4DA770319EEA62E00ED4FDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +108,11 @@
 				E4F6116219FA98A400DA3144 /* SexInputViewController.m */,
 				E4F6116419FA98D500DA3144 /* GuageViewController.h */,
 				E4F6116519FA98D500DA3144 /* GuageViewController.m */,
+				E407036519FB3DAC00A353D3 /* AnalyseViewController.h */,
+				E407036619FB3DAC00A353D3 /* AnalyseViewController.m */,
+				E407036C19FB92CE00A353D3 /* GuageScrollView.h */,
+				E407036D19FB92CE00A353D3 /* GuageScrollView.m */,
+				E4B059A71A04D563001F7FAE /* Global.h */,
 			);
 			path = Beautyou;
 			sourceTree = "<group>";
@@ -108,6 +122,7 @@
 			children = (
 				E4DA770219EEA62E00ED4FDD /* Info.plist */,
 				E4DA770319EEA62E00ED4FDD /* main.m */,
+				E407036819FB3E2300A353D3 /* dataview.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -211,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DA771019EEA62E00ED4FDD /* Main.storyboard in Resources */,
+				E407036919FB3E2300A353D3 /* dataview.plist in Resources */,
 				E4DA771519EEA62E00ED4FDD /* LaunchScreen.xib in Resources */,
 				E4DA771219EEA62E00ED4FDD /* Images.xcassets in Resources */,
 			);
@@ -230,9 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E407036719FB3DAC00A353D3 /* AnalyseViewController.m in Sources */,
 				E4DA770719EEA62E00ED4FDD /* AppDelegate.m in Sources */,
 				E4DA770419EEA62E00ED4FDD /* main.m in Sources */,
 				E4F6116319FA98A400DA3144 /* SexInputViewController.m in Sources */,
+				E407036E19FB92CE00A353D3 /* GuageScrollView.m in Sources */,
 				E4F6116619FA98D500DA3144 /* GuageViewController.m in Sources */,
 				E4F6116019FA978600DA3144 /* DataInputViewController.m in Sources */,
 			);

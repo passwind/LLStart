@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>viewType</key>
+		<string>SexInput</string>
+		<key>viewTitle</key>
+		<string>您的性别是?</string>
+	</dict>
+	<dict>
+		<key>viewType</key>
+		<string>Guage</string>
+		<key>viewTitle</key>
+		<string>您的体重是？</string>
+		<key>guageInfo</key>
+		<dict>
+			<key>min</key>
+			<integer>30</integer>
+			<key>max</key>
+			<integer>150</integer>
+			<key>step</key>
+			<integer>10</integer>
+			<key>unit</key>
+			<string>公斤</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>viewType</key>
+		<string>Guage</string>
+		<key>viewTitle</key>
+		<string>您的身高是？</string>
+		<key>guageInfo</key>
+		<dict>
+			<key>min</key>
+			<integer>100</integer>
+			<key>max</key>
+			<integer>250</integer>
+			<key>step</key>
+			<integer>10</integer>
+			<key>unit</key>
+			<string>CM</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>viewType</key>
+		<string>Guage</string>
+		<key>viewTitle</key>
+		<string>您的年龄是？</string>
+		<key>guageInfo</key>
+		<dict>
+			<key>min</key>
+			<integer>15</integer>
+			<key>max</key>
+			<integer>75</integer>
+			<key>step</key>
+			<integer>10</integer>
+			<key>unit</key>
+			<string>岁</string>
+		</dict>
+	</dict>
+</array>
+</plist>

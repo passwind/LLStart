@@ -7,16 +7,23 @@
 //
 
 #import "GuageViewController.h"
+#import "GuageScrollView.h"
+#import "Global.h"
 
-@interface GuageViewController ()
+
+@interface GuageViewController ()<GuageScrollViewDataSource>
+@property (weak, nonatomic) IBOutlet UILabel *guageTitleLabel;
+@property (weak, nonatomic) IBOutlet GuageScrollView *guageView;
 
 @end
 
 @implementation GuageViewController
 
+#pragma mark - View Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _guageView.dataSource=self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +40,53 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Properties 
+
+-(void)setGuageInfo:(NSDictionary *)dic
+{
+    _guageInfo=dic;
+    
+    self.guageTitleLabel.text=_guageInfo[@"unit"];
+    [self reloadGuageData];
+}
+
+#pragma mark - functions
+
+-(void)reloadGuageData
+{
+    int n=([_guageInfo[@"max"] intValue]-[_guageInfo[@"min"] intValue])/[_guageInfo[@"step"] intValue];
+    int width=UnitWidth*n;
+    
+    CGRect frame=[self.view bounds];
+    CGSize newSize=CGSizeMake(width, frame.size.height);
+    
+    [_guageView setContentSize:newSize];
+    
+    [self moveMidPosition];
+}
+
+-(void)moveMidPosition
+{
+    CGSize totalSize=_guageView.contentSize;
+    CGRect frame=_guageView.frame;
+    
+    CGPoint offset=CGPointMake(totalSize.width/2-frame.size.width/2, 0);
+    
+    _guageView.contentOffset=offset;
+}
+
+#pragma mark - GuageScrollViewDataSource Method
+-(UIView*)guageScrollView:(GuageScrollView *)scrollView withCol:(int)column
+{
+    UIImageView * tile=(UIImageView *)[scrollView dequeueReusableTile];
+    
+    if(!tile)
+    {
+        tile=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guage"]];
+    }
+    
+    return tile;
+}
 
 @end
