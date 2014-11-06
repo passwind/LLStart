@@ -9,6 +9,10 @@
 #ifndef Beautyou_Global_h
 #define Beautyou_Global_h
 
+#define kViewTypeSexInput @"SexInput"
+#define kViewTypeGuage @"Guage"
+#define kViewTypePhoto @"PhotoTake"
+
 #define UnitWidth 107
 #define UnitHeight 63
 

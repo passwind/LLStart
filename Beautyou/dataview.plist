@@ -65,5 +65,11 @@
 			<integer>25</integer>
 		</dict>
 	</dict>
+	<dict>
+		<key>viewType</key>
+		<string>PhotoTake</string>
+		<key>viewTitle</key>
+		<string>请您拍张照片</string>
+	</dict>
 </array>
 </plist>

@@ -10,9 +10,8 @@
 #import "SexInputViewController.h"
 #import "GuageViewController.h"
 #import "AnalyseViewController.h"
-
-#define kViewTypeSexInput @"SexInput"
-#define kViewTypeGuage @"Guage"
+#import "PhotoViewController.h"
+#import "Global.h"
 
 @interface DataInputViewController ()<AnalyseViewControllerDelegate>
 {
@@ -23,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIPageControl *dataPageControl;
 @property (strong,nonatomic) SexInputViewController * sexInputViewController;
 @property (strong,nonatomic) GuageViewController * guageViewController;
+@property (strong,nonatomic) PhotoViewController * photoViewController;
 
 @property (strong,nonatomic) NSArray * bodyDataArray;
 @property (strong,nonatomic) NSString * currentViewType;
@@ -44,6 +44,10 @@
     _guageViewController=[self.storyboard instantiateViewControllerWithIdentifier:@"GuageView"];
     [self addChildViewController:_guageViewController];
     [_guageViewController didMoveToParentViewController:self];
+    
+    _photoViewController=[self.storyboard instantiateViewControllerWithIdentifier:@"PhotoView"];
+    [self addChildViewController:_photoViewController];
+    [_photoViewController didMoveToParentViewController:self];
     
     _bodyDataArray=[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"dataview" ofType:@"plist"]];
     
@@ -122,17 +126,33 @@
         _currentViewType=kViewTypeSexInput;
     }
     else if([dataItem[@"viewType"] isEqualToString:kViewTypeGuage]) {
-        if ([_currentViewType isEqualToString:kViewTypeSexInput]) {
-            [_sexInputViewController.view removeFromSuperview];
-            
-            [_guageViewController.view setFrame:frame];
-            [self.view insertSubview:_guageViewController.view belowSubview:_dataPageControl];
-            _currentViewType=kViewTypeGuage;
+        if (_currentDataIndex==[_bodyDataArray count]-1) {
+            [_guageViewController.view removeFromSuperview];
+            [_photoViewController.view setFrame:frame];
+            [self.view insertSubview:_photoViewController.view belowSubview:_dataPageControl];
+            _currentViewType=kViewTypePhoto;
         }
+        else{
+            if ([_currentViewType isEqualToString:kViewTypeSexInput]) {
+                [_sexInputViewController.view removeFromSuperview];
+                
+                [_guageViewController.view setFrame:frame];
+                [self.view insertSubview:_guageViewController.view belowSubview:_dataPageControl];
+                _currentViewType=kViewTypeGuage;
+            }
+            
+            [_guageViewController setGuageInfo:dataItem[@"guageInfo"]];
+        }
+    }
+    else if([dataItem[@"viewType"] isEqualToString:kViewTypePhoto]) {
+        [_photoViewController.view removeFromSuperview];
         
+        [_guageViewController.view setFrame:frame];
+        [self.view insertSubview:_guageViewController.view belowSubview:_dataPageControl];
+        _currentViewType=kViewTypeGuage;
         [_guageViewController setGuageInfo:dataItem[@"guageInfo"]];
     }
-    
+
     if (_currentDataIndex==0) {
         _backButton.hidden=YES;
     }

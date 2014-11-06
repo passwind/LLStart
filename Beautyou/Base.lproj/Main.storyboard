@@ -123,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsp-3u-sRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="611"/>
+            <point key="canvasLocation" x="1189.5" y="758"/>
         </scene>
         <!--Analyse View Controller-->
         <scene sceneID="2U6-2X-aV6">
@@ -320,7 +320,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPT-S3-s2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="1549"/>
+            <point key="canvasLocation" x="1302" y="1537"/>
         </scene>
         <!--Guage View Controller-->
         <scene sceneID="mYg-0Z-Cpv">
@@ -382,7 +382,94 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igd-hE-g4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1993" y="1308"/>
+            <point key="canvasLocation" x="1819.5" y="758"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="Bel-KN-qQM">
+            <objects>
+                <viewController storyboardIdentifier="PhotoView" id="kFr-MH-z4L" customClass="PhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t21-oA-jBL"/>
+                        <viewControllerLayoutGuide type="bottom" id="2M1-K9-dxh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OFq-un-LNX">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RJB-pS-tcp">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="gXl-yp-6Tu"/>
+                                    <constraint firstAttribute="width" constant="256" id="kEB-az-YA7"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gXl-yp-6Tu"/>
+                                        <exclude reference="kEB-az-YA7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="gXl-yp-6Tu"/>
+                                        <include reference="kEB-az-YA7"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZx-5D-UHW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="取景区...">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhotoAction:" destination="kFr-MH-z4L" eventType="touchUpInside" id="IA7-1G-OUG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tZx-5D-UHW" firstAttribute="height" secondItem="RJB-pS-tcp" secondAttribute="height" id="Br3-Xh-mAT"/>
+                            <constraint firstItem="tZx-5D-UHW" firstAttribute="width" secondItem="RJB-pS-tcp" secondAttribute="width" id="KCL-av-LFD"/>
+                            <constraint firstItem="tZx-5D-UHW" firstAttribute="leading" secondItem="RJB-pS-tcp" secondAttribute="leading" id="Kbb-pm-rkh"/>
+                            <constraint firstItem="tZx-5D-UHW" firstAttribute="top" secondItem="RJB-pS-tcp" secondAttribute="top" id="hQn-qr-opj"/>
+                            <constraint firstAttribute="centerY" secondItem="RJB-pS-tcp" secondAttribute="centerY" id="p7S-nl-56h"/>
+                            <constraint firstAttribute="centerX" secondItem="RJB-pS-tcp" secondAttribute="centerX" id="x8w-A0-ayR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="RJB-pS-tcp"/>
+                                <exclude reference="tZx-5D-UHW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="p7S-nl-56h"/>
+                                <exclude reference="x8w-A0-ayR"/>
+                                <exclude reference="Br3-Xh-mAT"/>
+                                <exclude reference="KCL-av-LFD"/>
+                                <exclude reference="Kbb-pm-rkh"/>
+                                <exclude reference="hQn-qr-opj"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="RJB-pS-tcp"/>
+                                <include reference="tZx-5D-UHW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="p7S-nl-56h"/>
+                                <include reference="x8w-A0-ayR"/>
+                                <include reference="Br3-Xh-mAT"/>
+                                <include reference="KCL-av-LFD"/>
+                                <include reference="Kbb-pm-rkh"/>
+                                <include reference="hQn-qr-opj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="photoButton" destination="tZx-5D-UHW" id="zgT-4p-gdW"/>
+                        <outlet property="photoView" destination="RJB-pS-tcp" id="Q2d-tQ-kDw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXu-My-E4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2466" y="758"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="88f-bd-mdn">
@@ -400,7 +487,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nw7-kS-trO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="523" y="1557"/>
+            <point key="canvasLocation" x="556.5" y="1537"/>
         </scene>
     </scenes>
     <resources>
